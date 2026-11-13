@@ -4,15 +4,20 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import Header from './Header'
+import servico from "../pages/servico.jsx"
 
 function App() {
-  let contador= 0;
+  const [contador, setContador] = useState(0);
   function increment(){
-  contador ++;
-  console.log(contador);
+    setContador(contador+1);
   }
 
-  return (
+  function App() {
+    return <servico />;
+  }
+
+  
+
     <>
       <section id="center">
 
@@ -31,7 +36,7 @@ function App() {
       </section>
       <section id="spacer"></section>
     </>
-  )
+  
 }
 
 export default App;
